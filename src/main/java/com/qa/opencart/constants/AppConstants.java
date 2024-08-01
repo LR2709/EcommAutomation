@@ -9,7 +9,7 @@ public class AppConstants {
 	public static final String QA_FILE_PATH = "./src/test/resources/qa.properties";
 	public static final String DEV_FILE_PATH = "./src/test/resources/dev.properties";
 	public static final String LOGIN_PAGE_TITLE = "Account Login";
-	public static final String ACCOUNT_PAGE_TITLE = "My AAccount";
+	public static final String ACCOUNT_PAGE_TITLE = "My Account";
 	public static final String LOGIN_PAGE_PARTIAL_URL = "route=account/login";
 	public static final List<String> ACCPAGE_HEADER_LIST = Arrays.asList("My Account","My Orders","My Affiliate Account","Newsletter");
 	public static final String ACC_PARTIAL_URL = "route=account/account";

@@ -5,6 +5,7 @@ test-output/
 build/
 reports/
 logs/
+target/
 
 opencart.log
 ##############################
