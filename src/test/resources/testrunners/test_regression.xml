@@ -5,12 +5,11 @@
 
 <suite name="Opencart App Test Regression Suite" verbose="4" parallel="tests">
 	<listeners>
-		<!-- <listener class-name="com.qa.opencart.listeners.ExtentReportListener" 
-			/> -->
+		 <listener class-name="com.qa.opencart.listeners.ExtentReportListener" />
 		<listener
 			class-name="com.qa.opencart.listeners.TestAllureListener" />
-		<!-- <listener class-name="com.qa.opencart.listeners.AnnotationTransformer" 
-			/> -->
+		<listener class-name="com.qa.opencart.listeners.AnnotationTransformer" 
+			/>
 	</listeners>
 
 	<test name="Register Page Test">
@@ -29,7 +28,7 @@
 		</classes>
 	</test>
 
-<!-- 
+
 	<test name="Account Page Test">
 		<parameter name="browser" value="firefox" />
 
@@ -37,8 +36,8 @@
 			<class name="com.qa.opencart.tests.AccountPageTest" />
 		</classes>
 	</test>
- -->
-	<!-- <test name="Search Page Test">
+
+	<test name="Search Page Test">
 		<parameter name="browser" value="chrome" />
 
 		<classes>
@@ -52,7 +51,16 @@
 		<classes>
 			<class name="com.qa.opencart.tests.ProductPageTest" />
 		</classes>
-	</test> -->
+	</test>
+	
+	<test name="Register Page Test">
+		<parameter name="browser" value="edge" />
+
+		<classes>
+			<class name="com.qa.opencart.tests.RegisterPageTest" />
+		</classes>
+	</test>
+	
 
 
 </suite>

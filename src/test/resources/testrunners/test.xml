@@ -4,12 +4,12 @@
 <suite name="Opencart App Test Sanity Suite" verbose ="4" >
 
 <listeners>
-		<!-- <listener
-			class-name="com.qa.opencart.listeners.ExtentReportListener" /> -->
+		<listener
+			class-name="com.qa.opencart.listeners.ExtentReportListener" />
 		<listener
 			class-name="com.qa.opencart.listeners.TestAllureListener" />
-		<!-- <listener
-			class-name="com.qa.opencart.listeners.AnnotationTransformer" /> -->
+		<listener
+			class-name="com.qa.opencart.listeners.AnnotationTransformer" />
 	</listeners>
 	
 	<test name="Register Page Test">
