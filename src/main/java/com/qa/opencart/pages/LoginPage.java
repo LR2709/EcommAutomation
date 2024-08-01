@@ -53,7 +53,9 @@ public class LoginPage {
     @Step("Login with username:...")
 	public AccountPage login(String username, String pwd) {
 		driver.findElement(email).sendKeys(username);
+		System.out.println("User logged in is: "+username);
 		driver.findElement(password).sendKeys(pwd);
+		System.out.println("User password is: "+pwd);
 		driver.findElement(loginBtn).click();
 		/*
 		 * eleUtil.doSendKeys(email, username, TimeUtil.DEFAULT_TIME);
