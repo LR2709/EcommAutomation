@@ -30,7 +30,7 @@
 
 
 	<test name="Account Page Test">
-		<parameter name="browser" value="firefox" />
+		<parameter name="browser" value="chrome" />
 
 		<classes>
 			<class name="com.qa.opencart.tests.AccountPageTest" />
