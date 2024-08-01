@@ -12,7 +12,7 @@ public class AppConstants {
 	public static final String ACCOUNT_PAGE_TITLE = "My Account";
 	public static final String LOGIN_PAGE_PARTIAL_URL = "route=account/login";
 	public static final List<String> ACCPAGE_HEADER_LIST = Arrays.asList("My Account","My Orders","My Affiliate Account","Newsletter");
-	public static final String ACC_PARTIAL_URL = "route=account/account12";
+	public static final String ACC_PARTIAL_URL = "route=account/account";
 	public static final String PRODUCT_PAGE_PARTIAL_URL ="route=product/product";
 	public static final String SEARCH_PAGE_PARTIAL_URL ="route=product/search";
 	public static final String SEARCH_RESULT_PAGE_HEADER= "Products meeting the search criteria";
