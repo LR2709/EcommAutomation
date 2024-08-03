@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.qa.opencart.logger.Log;
+
 /*import com.qa.opencart.constants.AppConstants;
 import com.qa.opencart.utilities.ElementUtil;
 import com.qa.opencart.utilities.TimeUtil;
@@ -29,14 +31,16 @@ public class AccountPage {
 	public String getAccountPageTitle() {
 		String accPageTitle = driver.getTitle();
 				//eleUtil.waitForTitleToBe(AppConstants.ACCOUNT_PAGE_TITLE, TimeUtil.DEFAULT_TIME);
-		System.out.println("Account page title is: " + accPageTitle);
+		//System.out.println("Account page title is: " + accPageTitle);
+		Log.info("Account page title is: " + accPageTitle);
 		return accPageTitle;
 	}
 
 	public String getAccPageURL() {
 		String accPageurl = driver.getCurrentUrl();
 				//eleUtil.waitForURLContains(AppConstants.ACC_PARTIAL_URL, TimeUtil.DEFAULT_TIME);
-		System.out.println("Account page url is : " + accPageurl);
+		//System.out.println("Account page url is : " + accPageurl);
+		Log.info("Account page url is : " + accPageurl);
 		return accPageurl;
 	}
 
@@ -75,7 +79,8 @@ public class AccountPage {
 			driver.findElement(searchIcon).click();
 			return new SearchResultsPage(driver);
 		} else {
-			System.out.println("search box is not displayed");
+			//System.out.println("search box is not displayed");
+			Log.info("search box is not displayed");
 			return null;
 		}
 
